@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+
+    font: Arial, Helvetica, sans-serif;
+    div {
+        h1 {
+            color: blue;
+        }
+    }
+    
+    .top {
+        background-color: yellowgreen;
+        h1 {
+            display: inline-block;
+            background: #333;
+            color: rgb(112, 19, 233);
+        }
+    }
+}
