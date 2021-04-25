@@ -8,9 +8,11 @@
     "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-refresh": "^0.10.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",

@@ -6,7 +6,7 @@ export function App() {
     return (
         <>
             <RepositoryList />
-            <Counter />
+            {/*<Counter />*/}
         </>
     );
 }
