@@ -12,15 +12,13 @@ export function RepositoryList() {
         .then(data => setRepositories(data))
     }, [])
 
-    console.log(repositories);
-
     return (
         <section className="repository-list">
             <h1>Repository List - nandobutzke</h1>
 
             <ul>
                 {repositories.map(repository => {
-                    return <RepositoryItem key={repository.id} repository={repository} />
+                    return <RepositoryItem key={repository.node_id} repository={repository} />
                 })}
             </ul>
         </section>
