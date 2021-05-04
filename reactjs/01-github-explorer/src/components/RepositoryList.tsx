@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import '../styles/repositories.scss'
 
 interface Repository {
-    name: string
+    name: string;
     description: string;
     html_url: string;
 }
