@@ -1,1 +1,1 @@
-### Follow this link to see the challenge instructions: 
+### Follow this link to see the challenge instructions: [![Notion Badge](https://img.shields.io/badge/-Notion-black?style=flat-square&logo=notion&logoColor=white&link=https://www.linkedin.com/in/fernandobutzke)](https://www.linkedin.com/in/fernandobutzke)
