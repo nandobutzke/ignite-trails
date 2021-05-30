@@ -24,7 +24,7 @@ export function App() {
       />
       <Dashboard />
 
-      <NewTransactionModal isClick={isOpenNewTransactionModal} onRequestClose={handleCloseNewTransactionModal} />
+      <NewTransactionModal isOpen={isOpenNewTransactionModal} onRequestClose={handleCloseNewTransactionModal} />
 
       <TransactionsTable />
       <GlobalStyle />
