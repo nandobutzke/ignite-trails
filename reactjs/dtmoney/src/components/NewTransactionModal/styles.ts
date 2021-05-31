@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { darken, transparentize } from 'polished';
 
-export const Container = styled.form`
+export const FormContainer = styled.form`
     h2 { 
         color: var(--text-title);
         font-size: 1.5rem;
@@ -27,8 +27,6 @@ export const Container = styled.form`
         & + input {
             margin-top: 1rem;
         }
-
-
     }
 
     button[type="submit"] {
@@ -50,7 +48,7 @@ export const Container = styled.form`
     }
 `;
 
-export const TransactionsTyopeContainer = styled.div`
+export const TransactionsTypeContainer = styled.div`
     margin: 1rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
