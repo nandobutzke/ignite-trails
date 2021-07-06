@@ -1,3 +1,5 @@
-export function Content() {
+import './styles/content.scss';
 
+export function Content() {
+    
 }
