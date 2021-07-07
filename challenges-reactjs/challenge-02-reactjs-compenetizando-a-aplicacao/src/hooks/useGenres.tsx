@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 import { api } from '../services/api';
 
-export interface MovieProps {
+interface MovieProps {
   imdbID: string;
   Title: string;
   Poster: string;
@@ -12,11 +12,11 @@ export interface MovieProps {
   Runtime: string;
 }
 
-export interface GenreProviderProps {
+interface GenreProviderProps {
     children: ReactNode;
 }
 
-export interface GenreResponseProps {
+interface GenreResponseProps {
     id: number;
     name: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
     title: string;

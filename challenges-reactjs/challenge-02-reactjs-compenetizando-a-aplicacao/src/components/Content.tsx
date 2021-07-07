@@ -20,7 +20,6 @@ export function Content() {
                     </div>
                 </main>
             </div>
-
         </>
     );
 
