@@ -27,7 +27,7 @@ interface GenreContextData {
     selectedGenreId: number;
     selectedGenre: GenreResponseProps;
     movies: MovieProps[];
-    setSelectedGenreId: (id: number) => void;
+    handleClickButton: (id: number) => void;
     setSelectedGenre: (selectedGenre: GenreResponseProps) => void;
     setGenres: (genres: GenreResponseProps[]) => void;
     setMovies: (movies: MovieProps[]) => void;
@@ -49,10 +49,22 @@ export function GenreProvider({children}: GenreProviderProps) {
     });
   }, []);
 
-  
+  useEffect(() => {
+    api.get<MovieProps[]>(`movies/?Genre_id=${selectedGenreId}`).then(response => {
+      setMovies(response.data);
+    });
+
+    api.get<GenreResponseProps>(`genres/${selectedGenreId}`).then(response => {
+      setSelectedGenre(response.data);
+    })
+  }, [selectedGenreId]);
+
+  function handleClickButton(id: number) {
+      setSelectedGenreId(id);
+  }
 
   return (
-    <GenreContext.Provider value={{ genres, selectedGenreId, selectedGenre, movies, setSelectedGenreId, setSelectedGenre, setGenres, setMovies }}>
+    <GenreContext.Provider value={{ genres, selectedGenreId, selectedGenre, movies, handleClickButton, setSelectedGenre, setGenres, setMovies }}>
       {children}
     </GenreContext.Provider>
   );

@@ -5,6 +5,7 @@ import { MovieCard } from './components/MovieCard';
 import { GenreProvider, useGenres } from './hooks/useGenres';
 
 import { SideBar } from './components/SideBar';
+import { Content } from './components/Content';
 // import { Content } from './components/Content';
 
 import './styles/content.scss';
@@ -25,26 +26,16 @@ interface MovieProps {
 }
 
 export function App() {
-  //const { movies, selectedGenreId } = useGenres();
-  const [movies, setMovies] = useState<MovieProps[]>([]);
+  
+  //const [movies, setMovies] = useState<MovieProps[]>([]);
   
 
   
   return (
     <GenreProvider>
       <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <SideBar />
-
-        <div className="container">
-
-          <main>
-            <div className="movies-list">
-              {movies.map(movie => (
-                <MovieCard key ={movie.imdbID} title={movie.Title} poster={movie.Poster} runtime={movie.Runtime} rating={movie.Ratings[0].Value} />
-              ))}
-            </div>
-          </main>
-        </div>
+        <SideBar />
+        <Content />
       </div>
     </GenreProvider>
 
