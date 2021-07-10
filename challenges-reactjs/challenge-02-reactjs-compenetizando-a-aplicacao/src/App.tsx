@@ -1,8 +1,4 @@
-import { useEffect, useState } from 'react';
-
-import { Button } from './components/Button';
-import { MovieCard } from './components/MovieCard';
-import { GenreProvider, useGenres } from './hooks/useGenres';
+import { GenreProvider } from './hooks/useGenres';
 
 import { SideBar } from './components/SideBar';
 import { Content } from './components/Content';
