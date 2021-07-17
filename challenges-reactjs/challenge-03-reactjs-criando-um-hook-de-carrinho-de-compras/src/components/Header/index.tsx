@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { MdShoppingBasket } from 'react-icons/md';
+import { MdShoppingBasket, MdStar } from 'react-icons/md';
 
 import logo from '../../assets/images/logo.svg';
-import { Container, Cart } from './styles';
+import { Container, Cart, ContainerButtons } from './styles';
 import { useCart } from '../../hooks/useCart';
 
 const Header = (): JSX.Element => {
@@ -15,6 +15,11 @@ const Header = (): JSX.Element => {
         <img src={logo} alt="Rocketshoes" />
       </Link>
 
+      <ContainerButtons>
+        <button>
+          <MdStar size={20} color="#FFF" />
+            Teste
+        </button>
       <Cart to="/cart">
         <div>
           <strong>Meu carrinho</strong>
@@ -24,6 +29,7 @@ const Header = (): JSX.Element => {
         </div>
         <MdShoppingBasket size={36} color="#FFF" />
       </Cart>
+      </ContainerButtons>
     </Container>
   );
 };

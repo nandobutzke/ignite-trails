@@ -16,6 +16,30 @@ export const Container = styled.header`
   }
 `;
 
+export const ContainerButtons = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background: #7159c1;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin-right: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.2s;
+
+    &:hover {
+      background: none;
+      border: solid 0.1px #7159c1;
+      color: #7159c1;
+    }
+  }
+  `;
+
 export const Cart = styled(Link)`
   display: flex;
   align-items: center;
