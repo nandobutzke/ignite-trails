@@ -28,6 +28,7 @@
     "@testing-library/react": "^12.0.0",
     "@types/next": "^9.0.0",
     "@types/node": "^16.4.13",
+    "@types/prismic-dom": "^2.1.1",
     "@types/react": "^17.0.16",
     "babel-jest": "^27.0.6",
     "eslint": "7.32.0",
