@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFFFFF;
+
+  --background: #1A1D23;
+
+  --white-20: #F8F8F8;
+  --gray-100: #D7D7D7;
+
+}
+
+body {
+  background: var(--background);
+  color: var(--white-20);
+}
+
+body, input, textarea, select, button {
+  font: 1rem "Inter", sans-serif;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
