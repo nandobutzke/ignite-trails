@@ -3,6 +3,6 @@ import Image from 'next/image'
 
 export default function Home() {
 
-  return <h1>Dash Go</h1>
+  return <h1>next-app</h1>
 
 }
