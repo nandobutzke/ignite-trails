@@ -41,6 +41,15 @@ const options = {
             '2021-12-21T00:00:00.000Z',
             '2021-12-22T00:00:00.000Z',
         ],
+    },
+    fill: {
+        opacity: 0.3,
+        type: 'gradient',
+        gradient: {
+            shade: 'dark',
+            opacityDFrom: 0.7,
+            opcacityTo: 0.3
+        }
     }
 };
 
