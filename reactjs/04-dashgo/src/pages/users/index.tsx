@@ -59,7 +59,7 @@ export default function UserList() {
                                     </Box>
                                 </Td>
                                 { isWideVersion && <Td>24 de dezembro, 2021</Td> }
-                                {/* <Td>
+                                <Td>
                                     <Button 
                                         as="a" 
                                         size="sm" 
@@ -69,7 +69,7 @@ export default function UserList() {
                                     >
                                         Editar
                                     </Button>
-                                </Td> */}
+                                </Td>
                             </Tr>
                             <Tr>
                                 <Td px={["4", "4", "6"]}>
@@ -82,7 +82,7 @@ export default function UserList() {
                                     </Box>
                                 </Td>
                                 { isWideVersion &&  <Td>24 de dezembro, 2021</Td> }
-                                {/* <Td>
+                                <Td>
                                     <Button 
                                         as="a" 
                                         size="sm" 
@@ -92,7 +92,7 @@ export default function UserList() {
                                     >
                                         Editar
                                     </Button>
-                                </Td> */}
+                                </Td>
                             </Tr>
                             <Tr>
                                 <Td px={["4", "4", "6"]}>
@@ -105,7 +105,7 @@ export default function UserList() {
                                     </Box>
                                 </Td>
                                 { isWideVersion && <Td>24 de dezembro, 2021</Td> }
-                                {/* <Td>
+                                <Td>
                                     <Button 
                                         as="a" 
                                         size="sm" 
@@ -115,7 +115,7 @@ export default function UserList() {
                                     >
                                         Editar
                                     </Button>
-                                </Td> */}
+                                </Td>
                             </Tr>
                         </Tbody>
                     </Table>
